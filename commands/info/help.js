@@ -29,6 +29,16 @@ module.exports = {
             .setAuthor(`${message.guild.me.displayName} Help`, message.guild.iconURL())
             .setThumbnail(bot.user.displayAvatarURL())
 
+        if (!args[0]) {
+
+            const sembed = new MessageEmbed()
+                .setAuthor(`${message.guild.me.displayName}`, message.guild.iconURL())
+                .setColor("GREEN")
+                .setDescription('**Message Has Been Sent to You In DMs!**')
+            message.channel.send(sembed).then(msg => {
+                msg.delete({ timeout: 10000 });
+            })
+
             const categories = readdirSync("./commands/")
 
             embed.setDescription(`**These Are the Available Commands For ${message.guild.me.displayName}\nBot's Global Prefix Is \`${PREFIX}\`\nServer Prefix Is \`${prefix}\`\n\nFor Help Related To A Particular Command Type -\n\`${prefix}help [command name | alias]\`**`)
@@ -44,8 +54,8 @@ module.exports = {
                 }
             })
 
-             message.channel.send(embed)
-        
+            return message.author.send(embed)
+        } else {
             let command = bot.commands.get(bot.aliases.get(args[0].toLowerCase()) || args[0].toLowerCase())
             if (!command) return message.channel.send(embed.setTitle("**Invalid Command!**").setDescription(`**Do \`${prefix}help\` For the List Of the Commands!**`))
             command = command.config
@@ -62,5 +72,5 @@ module.exports = {
 
             return message.channel.send(embed)
         }
-    };
-
+    }
+};

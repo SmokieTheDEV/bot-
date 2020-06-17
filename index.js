@@ -210,3 +210,4 @@ const listener = app.listen(process.env.PORT, () => {
 });
 
 bot.login(TOKEN);
+ 

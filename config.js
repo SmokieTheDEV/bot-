@@ -2,8 +2,6 @@ exports.TOKEN = 'NzE4OTExOTk3NDc0NzY2OTIw.Xumdsw.YdvFpE9W-qrUVEw9MImMgbk4jH4';
 
 exports.PREFIX = 'q';
 
-exports.GOOGLE_API_KEY = 'AIzaSyDPOmQ5i0FDpH50O4YwtEcSfYw80Izylus';
-
 exports.GENIUS_API_KEY = 'zdTLphFCy4pAlmK1mWEIn5Sw7B1N38XUp8UDeJcUGMavINCWSF3W9VakeQI8Z202';
 
 exports.yandex_API = '7dbe6eb877b74dc4b6e34fe6ec6da86e';

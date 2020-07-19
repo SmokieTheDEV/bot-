@@ -1,6 +1,6 @@
-exports.TOKEN = 'NmzE4OTExOTk3NDc0NzY2OTIw.Xumdsw.YdvFpE9W-qrUVEw9MImMgbk4jH4';
+exports.TOKEN = 'NzIzNDgwMjY5MDU0ODA0MDI5.XxQ6tw.SY7e_30mKFgR8CB51tT5e5yCzeQ';
 
-exports.PREFIX = 'q';
+exports.PREFIX = ';';
 
 exports.GOOGLE_API_KEY = 'AIzaSyDPOmQ5i0FDpH50O4YwtEcSfYw80Izylus';
 

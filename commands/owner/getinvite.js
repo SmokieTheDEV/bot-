@@ -1,4 +1,4 @@
-const ownerid = "339939008740065281";
+const ownerid = "551675716635328512";
 
 module.exports = {
     config: {
